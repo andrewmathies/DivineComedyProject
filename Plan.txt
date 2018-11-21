@@ -1,4 +1,3 @@
--controls for left and right
 -dialogue system (space input or x position to trigger)
 -enter dialogue from poem
 -background art
