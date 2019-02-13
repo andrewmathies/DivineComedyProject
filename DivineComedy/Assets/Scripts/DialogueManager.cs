@@ -6,6 +6,7 @@ using TMPro;
 public class DialogueManager : MonoBehaviour {
 
     public TextMeshProUGUI nameText, dialogueText;
+    public GameObject controller;
 
     private Queue<string> sentences;
 
@@ -45,5 +46,6 @@ public class DialogueManager : MonoBehaviour {
     public void EndDialogue()
     {
         Debug.Log("end of dialogue!");
+        controller.GetComponent<Controller>().DialogueOver();
     }
 }
